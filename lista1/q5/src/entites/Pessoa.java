@@ -1,4 +1,6 @@
 package entites;
+import java.time.LocalDate;
+import java.time.Period;
 
 public class Pessoa {
     private String cpf;
@@ -7,6 +9,7 @@ public class Pessoa {
 
     public int calcularIdade(){
 
+        return Period.between(dataNascimento, LocalDate.now()).getYears();
     }
 
     public String getCpf() {

@@ -1,9 +1,11 @@
 package entites;
 
+import entites.enums.Origem;
+
 public class Vacina {
 
     private int codigo;
-    private String nome;
+    private Origem nome;
     private String lote;
 
     public String getNome() {

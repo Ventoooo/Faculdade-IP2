@@ -1,10 +1,14 @@
 package entites;
+import java.util.ArrayList;
 
 public class RelacaoVacinados {
 
-    private RegistroVacina vacinados;
+    public ArrayList<Object> vacinados = new ArrayList<>();
 
-    public void adicionar(RegistroVacina registro){
+
+    public void adicionar(Object registro){
+
+        this.vacinados.add(registro);
 
     }
 
