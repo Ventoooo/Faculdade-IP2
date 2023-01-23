@@ -1,16 +1,16 @@
-package entites;
+package elements;
+
 import java.time.LocalDate;
 import java.time.Period;
 
 public class Pessoa {
+
     private String cpf;
     private String grupo;
     private LocalDate dataNascimento;
 
-    public int calcularIdade(){
+    //Getters and setters
 
-        return Period.between(dataNascimento, LocalDate.now()).getYears();
-    }
 
     public String getCpf() {
         return cpf;
@@ -34,5 +34,9 @@ public class Pessoa {
 
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    public int calcularIdade(){
+        return Period.between(dataNascimento,LocalDate.now()).getYears();
     }
 }

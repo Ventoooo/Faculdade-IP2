@@ -1,7 +1,6 @@
 import elements.Produto; import elements.Estoque;
 
 public class TesteEstoqueMain {
-
     public static void main(String[] args){
 
         Produto produto01 = new Produto("1", "Teclado");
@@ -17,6 +16,7 @@ public class TesteEstoqueMain {
 
         produto01.mudarNome("Teclado Virtual");
 
+        System.out.println();
+        estoque1.relatorio();
     }
-
 }
