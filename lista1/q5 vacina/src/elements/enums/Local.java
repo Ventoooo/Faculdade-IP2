@@ -1,0 +1,21 @@
+package elements.enums;
+
+public enum Local {
+
+    DRIVE_THRU_UFRPE_UNIVERSIDADE_RURAL("DRIVE THRU - UFRPE - UNIVERSIDADE RURAL"),
+    DRIVE_THRU_GERALDAO("DRIVE THRU GERALDÃO"),
+    CENTRO_DE_VACINACAO_PARQUE_DE_EXPOSICAO("CENTRO DE VACINAÇÃO PARQUE DE EXPOSIÇÃO"),
+    CENTRO_DE_VACINACAO_COMPAZ_ARIANO_SUASSUNA("CENTRO DE VACINAÇÃO  COMPAZ ARIANO SUASSUNA"),
+    DRIVE_THRU_PARQUE_DE_EXPOSICAO("DRIVE THRU PARQUE DE EXPOSIÇÃO"),
+    DRIVE_THRU_ARRUDA("DRIVE THRU ARRUDA");
+
+    private final String local;
+
+    Local(String local){
+        this.local = local;
+    }
+
+    public String getLocal() {
+        return local;
+    }
+}

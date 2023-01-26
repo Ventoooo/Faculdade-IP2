@@ -1,13 +1,26 @@
 package elements;
 
+import elements.enums.GrupoRegistro;
+
 import java.time.LocalDate;
 import java.time.Period;
 
 public class Pessoa {
 
     private String cpf;
-    private String grupo;
+    private GrupoRegistro grupo;
     private LocalDate dataNascimento;
+    private String nome;
+
+    //Construtor
+
+    public Pessoa(String cpf, GrupoRegistro grupo, LocalDate dataNascimento, String nome) {
+        this.cpf = cpf;
+        this.grupo = grupo;
+        this.dataNascimento = dataNascimento;
+        this.nome = nome;
+    }
+
 
     //Getters and setters
 
@@ -21,7 +34,7 @@ public class Pessoa {
     }
 
     public String getGrupo() {
-        return grupo;
+        return grupo.getRegistro();
     }
 
     public void setGrupo(String grupo) {

@@ -10,6 +10,15 @@ public class Vacina {
     private NomeVacina nome;
     private String lote;
 
+    //Construtor
+
+
+    public Vacina(int codigo, NomeVacina nome, String lote) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.lote = lote;
+    }
+
     //Getters and setters
     public int getCodigo() {
         return codigo;
