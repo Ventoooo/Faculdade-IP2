@@ -46,8 +46,11 @@ public class RelacaoVacinados {
     public void listarPessoasQueNaoTomaram2aDose(){
         int count = 0;
         for (RegistroVacina idd : vacinados){
-            if( equals(idd.getDose(), 2)){
+            if( !equals(idd.getDose(), 2)){
                 count += 1;
+            }
+            if(equals(idd.getDose(), 2)){
+                count -= 1;
             }
         }
         System.out.printf("%nTotal de vacinados que não tomaram a 2a. dose: "+ count);
