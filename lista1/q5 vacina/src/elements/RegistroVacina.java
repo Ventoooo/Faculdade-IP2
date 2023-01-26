@@ -52,7 +52,7 @@ public class RegistroVacina extends Vacina{
     }
 
     public LocalDate getData_vacinacao() {
-        return data_vacinacao;
+        return data_vacinacao.plusMonths(1);
     }
 
     public String getGrupo() {

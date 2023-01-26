@@ -37,7 +37,7 @@ public class Pessoa {
         return grupo.getRegistro();
     }
 
-    public void setGrupo(String grupo) {
+    public void setGrupo(GrupoRegistro grupo) {
         this.grupo = grupo;
     }
 
@@ -51,5 +51,13 @@ public class Pessoa {
 
     public int calcularIdade(){
         return Period.between(dataNascimento,LocalDate.now()).getYears();
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
