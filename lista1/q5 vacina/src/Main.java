@@ -17,7 +17,7 @@ public class Main {
     Pessoa pessoa2 = new Pessoa("3830333787 ", GrupoRegistro.IDOSOS, LocalDate.parse("1954-01-01"), "Maria José");
     Pessoa pessoa3 = new Pessoa("7870333383 ", GrupoRegistro.IDOSOS, LocalDate.parse("1952-01-01"), "José Silva");
     Pessoa pessoa4 = new Pessoa("3787303383 ", GrupoRegistro.IDOSOS, LocalDate.parse("1957-01-01"), "Maria Silva");
-    Pessoa pessoa5 = new Pessoa("secsecreto", GrupoRegistro.IDOSOS, LocalDate.parse("2000-06-14"), "Argel Bezerra");
+    Pessoa pessoa5 = new Pessoa("xxxxxxxxxx", GrupoRegistro.OUTRAS_PRIORIDADES, LocalDate.parse("2000-06-14"), "Argel Bezerra");
 
     Vacina coronavac = new Vacina(123456, NomeVacina.CORONAVAC, "45");
     Vacina oxford = new Vacina(123457, NomeVacina.OXFORD, "46");
@@ -26,19 +26,19 @@ public class Main {
             "234", LocalDate.now(), pessoa1.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Clarice", pessoa1 );
 
     RegistroVacina registro2 = new RegistroVacina(coronavac.getCodigo(), coronavac.getNome(), coronavac.getLote(),
-            "234", LocalDate.now(), pessoa1.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Claridade", pessoa2 );
+            "234", LocalDate.now(), pessoa2.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Claridade", pessoa2 );
 
     RegistroVacina registro3 = new RegistroVacina(coronavac.getCodigo(), coronavac.getNome(), coronavac.getLote(),
-            "234", LocalDate.now(), pessoa1.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Claridao", pessoa3 );
+            "234", LocalDate.now(), pessoa3.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Claridao", pessoa3 );
 
     RegistroVacina registro4 = new RegistroVacina(coronavac.getCodigo(), coronavac.getNome(), coronavac.getLote(),
-            "234", LocalDate.now(), pessoa1.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Clarão", pessoa4 );
+            "234", LocalDate.now(), pessoa4.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Clarão", pessoa4 );
 
     RegistroVacina registro5 = new RegistroVacina(coronavac.getCodigo(), coronavac.getNome(), coronavac.getLote(),
-            "234", LocalDate.now(), pessoa1.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Clariboia", pessoa5 );
+            "234", LocalDate.now(), pessoa5.getGrupo(),Dose.DOSE1, Local.DRIVE_THRU_GERALDAO, "Clariboia", pessoa5 );
 
     RegistroVacina registro6 = new RegistroVacina(coronavac.getCodigo(), coronavac.getNome(), coronavac.getLote(),
-            "234", LocalDate.now(), pessoa1.getGrupo(),Dose.DOSE2, Local.DRIVE_THRU_GERALDAO, "Claridao", pessoa5 );
+            "234", LocalDate.now(), pessoa5.getGrupo(),Dose.DOSE2, Local.DRIVE_THRU_GERALDAO, "Claridao", pessoa5 );
 
         RelacaoVacinados relacao1 = new RelacaoVacinados();
 
